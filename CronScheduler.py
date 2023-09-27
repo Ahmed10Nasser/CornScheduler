@@ -10,11 +10,11 @@ class CronScheduler:
   
 
   def __job_started_listener(self, event):
-    print("Starting a new instance of the job with id ({})".format(event.job_id))
+    print("\nStarting a new instance of the job with id ({})\n".format(event.job_id))
 
   def __job_finished_listener(self, event):
     time_taken = self.datetime.datetime.now() - event.scheduled_run_time.replace(tzinfo=None)
-    print("Finishing an instance of the job with id ({}) with taken time equals to {}".format(event.job_id, time_taken))
+    print("\nFinishing an instance of the job with id ({}) with taken time equals to {}\n".format(event.job_id, time_taken))
 
   def schedule_job(self,
                   *,
