@@ -72,7 +72,9 @@ Hello Nasser!
 
 Finishing an instance of the job with id (job2) with taken time equals to 0:00:15.005748
 
-Execution of job "hello (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2023-09-27 23:37:00 UTC)" skipped: maximum number of running instances reached (1)
+Execution of job "hello (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'],
+next run at: 2023-09-27 23:37:00 UTC)"
+skipped: maximum number of running instances reached (1)
 
 Starting a new instance of the job with id (job1)
 
@@ -98,7 +100,9 @@ Hello Ahmed!
 
 Finishing an instance of the job with id (job1) with taken time equals to 0:01:30.097536
 
-Execution of job "hello (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2023-09-27 23:39:00 UTC)" skipped: maximum number of running instances reached (1)
+Execution of job "hello (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'],
+next run at: 2023-09-27 23:39:00 UTC)"
+skipped: maximum number of running instances reached (1)
 
 Starting a new instance of the job with id (job1)
 Hello Zaki!
