@@ -1,4 +1,4 @@
-from CronScheduler import CornScheduler
+from CronScheduler import CronScheduler
 
 
 def hello(name : str = "Ahmed", sleepTime : int = 5):
@@ -7,7 +7,7 @@ def hello(name : str = "Ahmed", sleepTime : int = 5):
   print("Hello "+name+"!")
 
 
-cron_scheduler = CornScheduler()
+cron_scheduler = CronScheduler()
 
 """
   The following job1 runs evety minute, 

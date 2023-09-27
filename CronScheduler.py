@@ -1,4 +1,4 @@
-class CornScheduler:
+class CronScheduler:
   
   from apscheduler.schedulers.background import BlockingScheduler
   from apscheduler import events
