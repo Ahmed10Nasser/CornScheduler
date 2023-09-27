@@ -1,0 +1,2 @@
+APScheduler==3.10.4
+cron-validator==1.0.8
