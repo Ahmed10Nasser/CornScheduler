@@ -1,4 +1,4 @@
-# CornScheduler
+# CronScheduler
 ## Brief description of the solution
 - I have implemented a class named `CronScheduler` using `apscheduler` package.
 - The main method for the class is `schedule_job` that takes these following parameters and returns `bool` indicating whether the job has been scheduled or not.
