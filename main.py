@@ -4,7 +4,7 @@ from CronScheduler import CronScheduler
 def hello(name : str = "Ahmed", sleepTime : int = 5):
   import time
   time.sleep(sleepTime)
-  print("Hello "+name+"!")
+  print("\nHello "+name+"!\n")
 
 
 cron_scheduler = CronScheduler()
@@ -16,7 +16,11 @@ cron_scheduler = CronScheduler()
   so there will be concurrent instances of the same job,
   and it's handled because of the given expected runtime >= the actual runtime
 """
-cron_scheduler.schedule_job(id="job1", expected_runtime_in_seconds=90, cron_expression="* * * * *", job_function=hello, job_function_args=["Ahmed", 90])
+cron_scheduler.schedule_job(id="job1",
+                            expected_runtime_in_seconds=90,
+                            cron_expression="* * * * *",
+                            job_function=hello,
+                            job_function_args=["Ahmed", 90])
 
 """
   The following job2 runs evety two minutes, 
@@ -24,7 +28,11 @@ cron_scheduler.schedule_job(id="job1", expected_runtime_in_seconds=90, cron_expr
   and the acutal is 15s,
   and there are no concurrent instances
 """
-cron_scheduler.schedule_job(id="job2", expected_runtime_in_seconds=30, cron_expression="*/2 * * * *", job_function=hello, job_function_args=["Nasser", 15])
+cron_scheduler.schedule_job(id="job2",
+                            expected_runtime_in_seconds=30,
+                            cron_expression="*/2 * * * *",
+                            job_function=hello,
+                            job_function_args=["Nasser", 15])
 
 """
   The following job3 runs evety minute, 
@@ -35,6 +43,10 @@ cron_scheduler.schedule_job(id="job2", expected_runtime_in_seconds=30, cron_expr
   so some concurrent instances may be skipped
 """
 
-cron_scheduler.schedule_job(id="job3", expected_runtime_in_seconds=30, cron_expression="* * * * *", job_function=hello, job_function_args=["Zaki", 90])
+cron_scheduler.schedule_job(id="job3",
+                            expected_runtime_in_seconds=30,
+                            cron_expression="* * * * *",
+                            job_function=hello,
+                            job_function_args=["Zaki", 90])
 
 cron_scheduler.start_scheduler()
